@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+@import url(https://db.onlinewebfonts.com/c/f1fcc5aed1e20fc0cdb9f8a7573625bd?family=Integral+CF+Regular);
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satoshi', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    position: relative;
+    width: 1240px;
+    margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.category{
+    margin-bottom: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.header{
+    width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header a{
+    text-decoration: none;
+    color: black;
+}
+
+.header h2{
+    font-family: "Integral CF Regular";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.header .links{
+    position: relative;
+    width: 321px;
+    height: 22px;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    gap: 24px;
+    cursor: pointer;
+}
+
+.links .shopLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+}
+
+.shopLinks img{
+    width: 16px;
+    height: 16px;
+}
+
+.header .inputSearch{
+    width: 577px;
+    position: relative;
+}
+
+.inputSearch input{
+    width: 100%;
+    height: 48px;
+    padding: 13px 52px;
+    border-radius: 62px;
+    border: none;
+    background-color: #F0F0F0;
+}
+
+.inputSearch img{
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header .icons{
+    width: 62px;
+    display: flex;
+    gap: 14px;
+}
+
+.pageLinks {
+    background-color: #b8b8b85a;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    padding: 10px;
+}
+
+.pageLinks p{
+    margin-bottom: 10px;
+    position: relative;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.pageLinks p:last-child{
+    margin-bottom: 0;
+}
+
+.pageLinks p::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease; 
+}
+
+.pageLinks p:hover::after {
+    width: 100%; 
+}
+
+.flexItem{
+    display: flex;
+    gap: 20px;
+}
+
+.flexProduct{
+    display: flex;
+    gap: 40px;
+    margin-top: 36px;
+}
+
+.detailTitle svg{
+    margin: 0 14px;
 }

@@ -1,0 +1,90 @@
+.block{
+    background-color: #F0F0F0;
+    border-radius: 40px;
+    margin-bottom: 80px;
+    padding: 70px 64px;
+}
+
+.block h2{
+    font-family: "Integral CF Regular";
+    font-size: 48px;
+    text-align: center;
+    line-height: 57px;
+    font-weight: 700;
+    margin-bottom: 64px;
+}
+
+.block .blockFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blockFlex:nth-child(2){
+    margin-bottom: 20px;
+}
+
+.blockFlex .smallBlock, .blockFlex .largeBlock {
+    width: 407px;
+    height: 289px;
+    background: #FFFFFF;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease; 
+}
+
+.blockFlex .largeBlock {
+    width: 684px; 
+}
+
+.blockFlex img {
+    height: 289px;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 20px;
+    transition: all 0.3s ease; 
+}
+
+.blockFlex h3 {
+    position: absolute;
+    top: 25px;
+    left: 36px;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #000;
+    z-index: 2; 
+    transition: all 0.3s ease; 
+}
+
+.blockFlex .smallBlock::before, .blockFlex .largeBlock::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.blockFlex .smallBlock:hover::before, .blockFlex .largeBlock:hover::before {
+    opacity: 1;
+}
+
+.blockFlex .smallBlock:hover h3, .blockFlex .largeBlock:hover h3 {
+    font-size: 48px;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #FFF; 
+}
+
+.blockFlex .smallBlock:hover img, .blockFlex .largeBlock:hover img {
+    transform: scale(1.1); 
+}
+

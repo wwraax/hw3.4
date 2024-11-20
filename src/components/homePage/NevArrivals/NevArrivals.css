@@ -1,0 +1,67 @@
+.containerNev{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.title{
+    text-align: center;
+    font-family: "Integral CF Regular";
+    font-size: 48px;
+    line-height: 57px;
+    font-weight: 700;
+    margin-bottom: 55px;
+}
+
+.products{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.products img{
+    border-radius: 20px;
+}
+
+.products p{
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 700;
+}
+
+.products .grade{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.products h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;  
+    border-bottom: 1px solid #0000001A;
+    margin-bottom: 64px;
+}
+
+.button button{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    padding: 15px 80px;
+    background-color: #ffffff;
+    border: 1px solid #0000001A;
+    border-radius: 62px;
+    margin-bottom: 64px;
+    transition: .3s all;
+}
+
+.button button:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
